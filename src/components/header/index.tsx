@@ -33,7 +33,7 @@ const Header = () => {
           {/* Menu Nav */}
           <nav className={styles.nav}>
             <Link href="/">HOME</Link>
-            <Link href="/#servicos">SERVIÇOS</Link>
+            <Link href="/#servicos">SOBRE</Link>
             <Link href="/#contatos">CONTATOS</Link>
           </nav>
 
