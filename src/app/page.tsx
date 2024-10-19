@@ -9,8 +9,6 @@ import Container from "@/components/container";
 export default async function Home() {
   const data: HomeDataProps = await getDataHome();
 
-  console.log(data.object.title);
-
   return (
     <main>
       <div>
@@ -25,7 +23,12 @@ export default async function Home() {
         />
 
         <Container>
-          <Services />
+          <Services
+            imageDescription={data.object.metadata.services[0].description}
+            imageUrl={data.object.metadata.services[0].image.url}
+            text={data.object.metadata.about.description}
+            title="Sobre"
+          />
         </Container>
       </div>
     </main>
