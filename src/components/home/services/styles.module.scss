@@ -1,10 +1,11 @@
 .container {
-  margin: 160px 0 100px 0;
+  margin: 80px 0 100px 0;
   width: 100%;
   padding: 0 18px;
 }
 
 .content {
+  padding-top: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -88,6 +89,8 @@
 
 // media queries
 
+// About
+
 @media (max-width: 768px) {
   .content {
     flex-direction: column;
@@ -110,5 +113,19 @@
       width: 100%;
       margin-top: 22px;
     }
+  }
+}
+
+@media (min-width: 640px) {
+  .services {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .containerService {
+    width: 280px;
+    height: 200px;
   }
 }

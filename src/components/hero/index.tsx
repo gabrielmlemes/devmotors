@@ -3,6 +3,7 @@ import { getDataHome } from "@/utils/actions/get-data";
 import { HomeDataProps } from "@/utils/types/home-type";
 import styles from "./styles.module.scss";
 import { ReactNode } from "react";
+import CtaButton from "../cta-button";
 
 interface HeroProps {
   heading: string;
@@ -25,10 +26,7 @@ const Hero = async ({
       <div className={styles.containerHero}>
         <h1 className={styles.title}>{heading}</h1>
 
-        <a target="_blank" href={buttonUrl} className={styles.link}>
-          {icon}
-          {buttonTitle}
-        </a>
+        <CtaButton object={data.object}/>
       </div>
 
       <div className={styles.containerBanner}>

@@ -5,6 +5,7 @@ import Hero from "@/components/hero";
 import { Phone } from "lucide-react";
 import Services from "@/components/home/services";
 import Container from "@/components/container";
+import Footer from "@/components/home/footer";
 
 export default async function Home() {
   const data: HomeDataProps = await getDataHome();
@@ -19,7 +20,7 @@ export default async function Home() {
           buttonTitle={data.object.metadata.cta_button.title}
           buttonUrl={data.object.metadata.cta_button.url}
           bannerUrl={data.object.metadata.banner.url}
-          icon={<Phone size={24} color="#fff" />}
+        
         />
 
         <Container>
@@ -29,7 +30,9 @@ export default async function Home() {
             text={data.object.metadata.about.description}
             title="Sobre"
           />
+        <Footer object={data.object}/>
         </Container>
+
       </div>
     </main>
   );

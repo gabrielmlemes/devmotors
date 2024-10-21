@@ -1,0 +1,16 @@
+.link {
+    background-color: #30b700;
+    padding: 8px 24px;
+    color: #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    font-weight: medium;
+    transition: all .4s;
+    margin-top: 14px;
+}
+.link:hover {
+    transform: scale(1.09);
+}
