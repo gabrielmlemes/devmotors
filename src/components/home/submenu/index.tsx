@@ -47,7 +47,7 @@ const Submenu = ({ menu }: SubMenuProps) => {
         )}
 
         {menu.objects.map((item) => (
-          <li>
+          <li key={item.slug}>
             <Link href={`/post/${item.slug}`}>{item.title}</Link>
           </li>
         ))}

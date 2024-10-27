@@ -53,7 +53,6 @@ const data: HomeDataProps = await getDataHome();
 
       <CtaButton object={data.object}/>
 
-      <p className={styles.copy}>Gabriel Lemes {new Date().getFullYear()} | © Todos os direitos reservados </p>
     </footer>
   );
 };

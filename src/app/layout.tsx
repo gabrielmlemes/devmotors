@@ -29,6 +29,8 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Header/>
         {children}
+
+        <p style={{textAlign: 'center', margin: '54px 0 22px 0'}}>Gabriel Lemes {new Date().getFullYear()} | © Todos os direitos reservados </p>
       </body>
     </html>
   );
