@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dev Motors - Oficina
 
-## Getting Started
+* Uma plataforma moderna e intuitiva, projetada para que o administrador tenha controle completo e simplificado sobre todo o conteúdo, proporcionando uma gestão de página prática e eficiente!
 
-First, run the development server:
+* Deploy do projeto: https://devmotors-oficina.vercel.app/p 🖥️
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🔥 O que faz esse projeto se destacar?
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Páginas:
+* Página de login 
+* Página de cadastro de usuário
+* Página de dasboard do usuário 
+* Página de cadastro de novos carros
+* Página inicial com todos os carros cadastrados
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Ferramentas:
+* Firebase (Auth, Storage, Database): Autenticação, banco de dados e armazenamento de arquivos em tempo real
+* Context API: Gerenciar e compartilhar estado global entre componentes
+* React Hook Form + Zod: Validação de formulários
+* React-Hot-Toast: Lib React de "toasts" (notificações em tela)
+* React-Router-Dom: Permite criar navegação e rotas dentro da aplicação
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tecnologias usadas:
 
-## Learn More
+* ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+* ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+* ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-To learn more about Next.js, take a look at the following resources:
+* ![Firebase](https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34)
+* ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Links que podem ser úteis para você utilizar em seus projetos 😉:
+* (Badges do Readme: https://github.com/Ileriayo/markdown-badges)
+* (Lib AOS - EFEITOS DE SCROLL: https://michalsnik.github.io/aos/)
+* (Lib React-Hot-Toast: https://react-hot-toast.com/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📄 Licença
 
-## Deploy on Vercel
+Esse projeto está sob a licença MIT license - acesse os detalhes [LICENSE.md](https://github.com/gabrielmlemes/webcars/commit/3120e4de64cb6a3bfa9984177ede7b1d7e77730c)).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* MEU LINKTREE: ([Linktree](https://link-tree-gabriel-lemes.vercel.app/))
