@@ -2,21 +2,35 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.scss";
 import Header from "@/components/header";
+import { Roboto } from 'next/font/google'
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+const roboto = Roboto({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: "DevMotors - Sua oficina Especializada",
   description: "Oficina em Brasília",
+  // Otimizando metatags
+  keywords: ['oficina', 'oficina de carros', 'carros', 'manutenção', 'manutenção de carros'],
+  openGraph: {
+    title: "DevMotors - Sua oficina Especializada",
+    images: [`${process.env.NEXT_PUBLIC_URL}/logo.jpg`]
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true
+    }
+  }
+    
+  
 };
 
 export default function RootLayout({
@@ -26,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={roboto.className}>
         <Header/>
         {children}
 

@@ -1,0 +1,21 @@
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 100px);
+
+    a {
+        background-color: #000;
+        color: #fff;
+        padding: 8px 14px;
+        border-radius: 8px;
+        margin-top: 22px;
+        font-size: 24px;
+        transition: all .4s;
+    }
+    a:hover {
+        transform: scale(1.1);
+    }
+}
