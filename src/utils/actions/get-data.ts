@@ -1,5 +1,10 @@
 import { redirect } from "next/navigation";
 
+// Função para simular delay:
+// function delay(ms:number) {
+//   return  new Promise(resolve => setTimeout(resolve, ms));
+// }
+
 export async function getDataHome() {
   try {
     const res = await fetch(
@@ -48,6 +53,8 @@ export async function getItemBySlug(itemSlug: string) {
   const url = `${baseUrl}?${queryParams.toString()}`;
 
   try {
+    // Chamando função delay() que faz retardar a chamda abaixo em 2 segundos
+    // await delay(2000)
     const res = await fetch(url, { next: { revalidate: 120 } });
     if (!res.ok) {
       redirect("/");
